@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Chat.Server": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

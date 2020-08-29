@@ -1,0 +1,25 @@
+﻿syntax = "proto3";
+
+package EmployeeMessages;
+
+//import "google/protobuf/empty.proto";
+
+option csharp_namespace="EmployeeMessages";
+
+message GetEmployeeResponse{
+	repeated Employee employee=1;
+}
+
+message GetEmployeeRequest{
+	int32 employeeId=1;
+}
+
+
+message Employee{
+	string Firstname=1;
+	string Lastname=2;
+}
+
+service EmployeeService{
+	rpc GetEmployee(GetEmployeeRequest) returns(GetEmployeeResponse){};
+}
